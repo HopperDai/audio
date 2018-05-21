@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>音频播放器</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+
+<body>
+
+    <div class="box">
+        <audio src="assets/audios/夏天播放 - 小宝贝.mp3" controls="controls" class="audio"></audio>
+
+        <div class="audio-info">
+            <p class="audio-name">小宝贝</p>
+            <p class="singer">夏天播放</p>
+        </div>
+
+        <div class="duration-bar">
+            <div class="start-time">00:00</div>
+            <div class="time-bar">
+                <div class="inner-bar"></div>
+                <div class="outline-bar"></div>
+                <div class="time-point"></div>
+            </div>
+            <div class="end-time"></div>
+        </div>
+        <div class="operate">
+            <img src="assets/images/previous.png" alt="" class="toggle-btn" id="previous">
+            <img src="assets/images/play.png" alt="" class="play operate-btn" id="play">
+            <img src="assets/images/pause.png" alt="" class="pause operate-btn" id="pause">
+            <img src="assets/images/next.png" alt="" class="toggle-btn" id="next">
+        </div>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
